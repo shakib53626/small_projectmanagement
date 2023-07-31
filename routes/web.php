@@ -25,6 +25,10 @@ Route::get('/dashboard', function () {
 
 Route::controller(OurProjectsController::class)->group(function(){
     Route::get('/our_projects', 'OurProjects')->name('our_projects');
+    Route::post('/add/project', 'AddProject')->name('add.project');
+    Route::get('/delete/project/{id}', 'DeleteProject')->name('delete.project');
+    Route::get('/edit_project/{id}', 'EditProject')->name('edit_project');
+    Route::get('/update/project', 'UpdateProject')->name('update.project');
 });
 
 Route::middleware('auth')->group(function () {

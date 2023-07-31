@@ -68,6 +68,7 @@
         <div class="rightbar-overlay"></div>
 
         <!-- JAVASCRIPT -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="{{ asset('backend/assets/libs/jquery/jquery.min.js') }}"></script>
         <script src="{{ asset('backend/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
         <script src="{{ asset('backend/assets/libs/metismenu/metisMenu.min.js') }}"></script>
@@ -107,6 +108,12 @@
 
         <!-- App js -->
         <script src="{{ asset('backend/assets/js/app.js') }}"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+        <script src="{{ asset('backend/assets/js/code.js') }}"></script>
+        
+        @yield('script')
     </body>
 
 </html>

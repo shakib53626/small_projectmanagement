@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('our__projects', function (Blueprint $table) {
             $table->id();
+            $table->string('domain_name')->nullable();
+            $table->string('type')->nullable();
+            $table->string('end_date')->nullable();
+            $table->string('whatsapp_group_name')->nullable();
+            $table->string('phone_number')->nullable();
+            $table->string('develop_by')->nullable();
+            $table->string('project_information')->nullable();
             $table->timestamps();
         });
     }
